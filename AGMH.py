@@ -396,7 +396,7 @@ def Finder_IETE(time1, time_name1, start1):
                         # ----- creation de la fonction Moyenne mobile  -----#
 
                     # ----- condition pour filtrer iete  -----#
-                    if I[1] > B and moyenne_epaule1 <= moyenne_tete / 2 and  moyenne_epaule1 >= moyenne_tete / 4 and  accept == True and G >= 1:
+                    if I[1] > B and moyenne_epaule1 <= moyenne_tete / 2 and  moyenne_epaule1 >= moyenne_tete / 4 and  accept == True and F >= 1:
                     # ----- condition pour filtrer iete  -----#
 
                         # ----- systeme de notation des iete en fonction de la beaute et de la perfection de realisation  -----#
@@ -446,13 +446,13 @@ def Finder_IETE(time1, time_name1, start1):
                     # ----- systeme de notation des iete en fonction de la beaute et de la perfection de realisation  -----#
 
                     # ----- regarde si la target a deja ete toucher en volatilité avant affichage  -----#
-                        dejatoucher = False
-                        for i in range (int (round(J[0])),place_liveprice):
-                            if df['h'].iloc[i] <= J[1] + (moyenne_tete) / 2 and dejatoucher == False:
-                                dejatoucher = True
-                                dejatoucher2 = 'OUI'
-                        if dejatoucher == False:
-                            dejatoucher2 = 'NON'
+                        #dejatoucher = False
+                        #for i in range (int (round(J[0])),place_liveprice):
+                            #if df['h'].iloc[i] <= J[1] + (moyenne_tete) / 2 and dejatoucher == False:
+                                #dejatoucher = True
+                                #dejatoucher2 = 'OUI'
+                        #if dejatoucher == False:
+                            #dejatoucher2 = 'NON'
                     # ----- regarde si la target a deja ete toucher en volatilité avant affichage  -----#
 
                         # ----- initialisation des données d'aide -----#
